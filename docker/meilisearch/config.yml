@@ -1,0 +1,5 @@
+meilisearch:
+  api_url: ${API_URL}
+  api_key: ${API_KEY}
+  insert_size: 1000
+  insert_interval: 10

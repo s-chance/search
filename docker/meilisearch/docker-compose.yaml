@@ -1,0 +1,17 @@
+services:
+  meilisearch:
+    image: getmeili/meilisearch:v1.10
+    container_name: meilisearch
+    ports:
+      - "7700:7700"
+    volumes:
+      - ./meili_data:/meili_data
+    environment:
+      - MEILI_MASTER_KEY=${API_KEY}
+
+#  meilisync:
+#    platform: linux/x86_64
+#    image: long2ice/meilisync
+#    container_name: meilisync
+#    volumes:
+#      - ./config.yml:/meilisync/config.yml
